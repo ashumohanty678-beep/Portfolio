@@ -834,7 +834,7 @@ body {
   }
 }
 
-/* ---------- Static Custom Flower Cursor ---------- */
+/* ---------- Static Custom Kunai Cursor ---------- */
 html,
 body,
 *,
@@ -873,46 +873,6 @@ textarea {
 .cursor-not-allowed,
 :disabled {
   cursor: not-allowed !important;
-}
-
-/* ---------- Tiny Pulsing Pink Glow Point at Top of Cursor ---------- */
-.cursor-glow-point {
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ffffff 25%, #ffa6d0 65%, #ff7eb6 100%);
-  box-shadow:
-    0 0 4px 1.5px rgba(255, 160, 205, 0.85),
-    0 0 8px 3px rgba(255, 110, 180, 0.45);
-  pointer-events: none;
-  animation: cursorGlowPulse 2.8s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-@keyframes cursorGlowPulse {
-  0%, 100% {
-    transform: scale(0.85);
-    opacity: 0.65;
-    box-shadow:
-      0 0 3px 1px rgba(255, 160, 205, 0.75),
-      0 0 6px 2px rgba(255, 110, 180, 0.35);
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-    box-shadow:
-      0 0 5px 2px rgba(255, 180, 220, 1),
-      0 0 10px 4px rgba(255, 110, 180, 0.6);
-  }
-}
-
-@media (pointer: coarse), (prefers-reduced-motion: reduce) {
-  .cursor-glow-point {
-    display: none !important;
-  }
 }
 
 /* ==========================================================================

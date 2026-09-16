@@ -8,7 +8,7 @@ import AchievementsSection from './components/ui/achievements-section.tsx';
 import ResumeSection from './components/ui/resume-section.tsx';
 import ContactSection from './components/ui/contact-section.tsx';
 import LiveBackground from './components/ui/LiveBackground.jsx';
-import CursorPetals from './components/ui/CursorPetals.jsx';
+import CursorSparkles from './components/ui/CursorSparkles.jsx';
 import BackgroundMusic from './components/ui/BackgroundMusic.tsx';
 
 export default function App() {
@@ -17,8 +17,8 @@ export default function App() {
       {/* Live Sakura Night Background */}
       <LiveBackground />
 
-      {/* Falling Sakura Petals Around Cursor */}
-      <CursorPetals />
+      {/* Subtle Violet Sparkles Around Cursor */}
+      <CursorSparkles />
 
       {/* Floating Background Music Player */}
       <BackgroundMusic />
